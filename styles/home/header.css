@@ -1,0 +1,125 @@
+.header-sec-home {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 5rem;
+  background-color: transparent;
+  border-bottom: 2px solid #FCFCFC;
+  padding: 0 1rem 0 1rem;
+  z-index: 1;
+}
+
+/* style logo */
+.header-sec-home-logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  cursor: default;
+}
+
+/* style div icons */
+.header-sec-home-nav-icons {
+  min-width: 5rem;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+/* style div icon account */
+.icon-account {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../../img/icon-account.svg) transparent center center
+    no-repeat;
+  background-size: cover;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+/* style div icon cart */
+.icon-cart {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background: url(../../img/coffee-cup-cart.png) transparent center center 
+    no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.quantity {
+  color: #fcfcfc;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: bold;
+}
+
+/* style nav itens */
+.header-sec-home-nav {
+  width: auto;
+  height: inherit;
+}
+
+.header-sec-home-nav-list {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 2vw;
+}
+
+.nav-list-item {
+  width: inherit;
+  height: inherit;
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+.nav-list-item > a {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(71, 35, 10, 0.356);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nav-list-item > a:hover:after {
+  content: url(../../img/ball-below.png);
+  position: absolute;
+  bottom: 5px;
+  animation: bounce 1.5s ease infinite;
+}
+
+.nav-list-item > a:hover {
+  text-shadow: #FCFCFC ;
+}
+
+.nav-list-item > a:active > span {
+  transform: scale(0.9);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}

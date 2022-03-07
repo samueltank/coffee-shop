@@ -1,0 +1,20 @@
+.sec-home {
+  min-width: inherit;
+  min-height: inherit;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+  background-color: #FAF1DF;
+  background-size: contain;
+}
+
+.sec-home-svg {
+  position: absolute;
+  z-index: 0;
+}
+
+.sec-home-svg-background {
+  fill: black;
+}
