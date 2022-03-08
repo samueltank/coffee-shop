@@ -1,3 +1,4 @@
+/* section  */
 .sec-home {
   width: inherit;
   min-height: inherit;
@@ -6,8 +7,7 @@
   justify-content: flex-start;
   align-content: flex-start;
   align-items: center;
-  background-color: #FAF1DF;
-  background-size: contain;
+  background-color: #faf1df;
 }
 
 .sec-home-svg {

@@ -7,6 +7,7 @@
 }
 .sticky {
   position: fixed;
+  width: inherit;
   height: 4rem !important;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.137);
 }
@@ -18,7 +19,7 @@
   align-items: center;
   width: 90%;
   height: inherit;
-  border-bottom: 2px solid #FCFCFC;
+  border-bottom: 2px solid #fcfcfc;
   padding: 0 1rem 0 1rem;
   z-index: 1;
   margin: auto;
@@ -26,7 +27,7 @@
 
 /* style logo */
 .header-sec-home-logo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   cursor: default;
 }
@@ -65,7 +66,7 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  background: url(../../img/coffee-cup-cart.png) transparent center center 
+  background: url(../../img/coffee-cup-cart.png) transparent center center
     no-repeat;
   background-size: cover;
   cursor: pointer;
@@ -94,6 +95,7 @@
 }
 
 .nav-list-item {
+  font-family: "Montserrat", sans-serif;
   width: inherit;
   height: inherit;
   list-style: none;
@@ -123,7 +125,7 @@
 }
 
 .nav-list-item > a:hover {
-  color: #47230A;
+  color: #47230a;
 }
 
 .nav-list-item > a:active > span {
