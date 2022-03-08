@@ -1,5 +1,5 @@
 .sec-home {
-  min-width: inherit;
+  width: inherit;
   min-height: inherit;
   display: flex;
   flex-flow: column nowrap;

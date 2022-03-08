@@ -1,5 +1,5 @@
 body {
-  position: relative;
-  min-height: 100vh;
-  min-width: 100vw;
+  position: relative !important;
+  width: 100vw !important;
+  min-height: 500vh !important; /* voltar para 100vh */
 }

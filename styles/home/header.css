@@ -1,14 +1,27 @@
+/* style container header */
+.container-sec-home-header {
+  width: inherit;
+  height: 6rem;
+  background-color: transparent;
+  transition: height 0.5s ease;
+}
+.sticky {
+  position: fixed;
+  height: 4rem !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.137);
+}
+
 .header-sec-home {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  height: 5rem;
-  background-color: transparent;
+  height: inherit;
   border-bottom: 2px solid #FCFCFC;
   padding: 0 1rem 0 1rem;
   z-index: 1;
+  margin: auto;
 }
 
 /* style logo */
@@ -36,7 +49,12 @@
     no-repeat;
   background-size: cover;
   border-radius: 2rem;
+  transition: background-color 0.4s ease;
+}
+
+.icon-account:hover {
   cursor: pointer;
+  background-color: #0000000e;
 }
 
 /* style div icon cart */
@@ -94,32 +112,34 @@
   justify-content: center;
   color: rgba(71, 35, 10, 0.356);
   font-weight: bold;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-.nav-list-item > a:hover:after {
-  content: url(../../img/ball-below.png);
+.nav-list-item > a:hover::after {
+  content: url(../../img/coffee-beans-24.png);
   position: absolute;
-  bottom: 5px;
+  bottom: 0px;
   animation: bounce 1.5s ease infinite;
 }
 
 .nav-list-item > a:hover {
-  text-shadow: #FCFCFC ;
+  color: #47230A;
 }
 
 .nav-list-item > a:active > span {
-  transform: scale(0.9);
+  transform: scale(0.99);
 }
+
+/*  */
 
 @keyframes bounce {
   0% {
-    transform: translateY(2px);
+    transform: translateY(-1px);
   }
   50% {
-    transform: translateY(7px);
+    transform: translateY(3px);
   }
   100% {
-    transform: translateY(2px);
+    transform: translateY(-1px);
   }
 }
