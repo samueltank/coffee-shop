@@ -93,35 +93,31 @@
   align-content: center;
   gap: 2vw;
 }
-
 .nav-list-item {
-  font-family: "Montserrat", sans-serif;
+  list-style: none;
   width: inherit;
   height: inherit;
-  list-style: none;
+}
+
+.nav-list-item > a > span {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
+  transition: padding 0.4s ease;
 }
 
 .nav-list-item > a {
   text-decoration: none;
   position: relative;
-  display: block;
   width: inherit;
   height: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   color: rgba(71, 35, 10, 0.356);
   font-weight: bold;
   transition: color 0.3s ease;
-}
-
-.nav-list-item > a:hover::after {
-  content: url(../../img/coffee-beans-24.png);
-  position: absolute;
-  bottom: 0px;
-  animation: bounce 1.5s ease infinite;
 }
 
 .nav-list-item > a:hover {
@@ -131,17 +127,17 @@
 .nav-list-item > a:active > span {
   transform: scale(0.99);
 }
-
-/*  */
-
-@keyframes bounce {
-  0% {
-    transform: translateY(-1px);
-  }
-  50% {
-    transform: translateY(3px);
-  }
-  100% {
-    transform: translateY(-1px);
-  }
+.nav-list-item > a #coffee-bean-bar {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 60%;
+  background: url(../../img/coffee-beans-24.png);
+  transition: transform 0.5s ease;
 }
+
+/* active  */
+.nav-list-item > a.active > span {
+  padding-bottom: 1.2rem;
+}
+
