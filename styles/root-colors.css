@@ -1,0 +1,11 @@
+/* page colors */
+:root {
+  --var-default-background: #faf1df; 
+  --var-dark-color: #000000;
+  --var-icon-account-background: rgba(0, 0, 0, 0.150);
+  --var-fixed-navbar-shadow: rgba(0, 0, 0, 0.150);
+  --var-header-sec-home-border-buttom: #FCFCFC;
+  --var-header-navbar-sec-home: #faf1df;
+  --var-header-navbar-span-itens: rgba(71, 35, 10, 0.356);
+  --var-header-navbar-span-itens-hover: #47230A 
+}

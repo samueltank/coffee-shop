@@ -2,14 +2,15 @@
 .container-sec-home-header {
   width: inherit;
   height: 6rem;
-  background-color: transparent;
+  background-color: var(--var-header-navbar-sec-home);
   transition: height 0.5s ease;
 }
+
 .sticky {
   position: fixed;
   width: inherit;
   height: 4rem !important;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.137);
+  box-shadow: 0 0 5px var(--var-fixed-navbar-shadow);
 }
 
 .header-sec-home {
@@ -19,7 +20,7 @@
   align-items: center;
   width: 90%;
   height: inherit;
-  border-bottom: 2px solid #fcfcfc;
+  border-bottom: 2px solid var(--var-header-sec-home-border-buttom);
   padding: 0 1rem 0 1rem;
   z-index: 1;
   margin: auto;
@@ -93,6 +94,7 @@
   align-content: center;
   gap: 2vw;
 }
+
 .nav-list-item {
   list-style: none;
   width: inherit;
@@ -102,7 +104,9 @@
 .nav-list-item > a > span {
   font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
-  transition: padding 0.4s ease;
+  transition: padding 0.4s ease, color 0.3s ease;
+  color: var(--var-header-navbar-span-itens);
+  font-weight: bold;
 }
 
 .nav-list-item > a {
@@ -115,18 +119,16 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  color: rgba(71, 35, 10, 0.356);
-  font-weight: bold;
-  transition: color 0.3s ease;
 }
 
-.nav-list-item > a:hover {
-  color: #47230a;
+.nav-list-item > a:hover > span {
+  color: var(--var-header-navbar-span-itens-hover);
 }
 
 .nav-list-item > a:active > span {
   transform: scale(0.99);
 }
+
 .nav-list-item > a #coffee-bean-bar {
   position: absolute;
   width: 24px;
@@ -139,5 +141,5 @@
 /* active  */
 .nav-list-item > a.active > span {
   padding-bottom: 1.2rem;
+  color: var(--var-header-navbar-span-itens-hover);
 }
-

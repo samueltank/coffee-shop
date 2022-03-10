@@ -7,7 +7,7 @@
   justify-content: flex-start;
   align-content: flex-start;
   align-items: center;
-  background-color: #faf1df;
+  background-color: var(--var-default-background);
 }
 
 .sec-home-svg {
@@ -16,5 +16,5 @@
 }
 
 .sec-home-svg-background {
-  fill: black;
+  fill: var(--var-dark);
 }
