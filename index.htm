@@ -18,7 +18,7 @@
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
 
     <!-- fonts: -->
-    <!-- MonteCarlo (font-family: 'MonteCarlo', cursive;)-->
+    <!-- MonteCarlo (font-family: 'MonteCarlo', cursive;) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="preconnect"
@@ -75,6 +75,7 @@
     <!-- scripts -->
     <script src="./js/home/header-nav-scrolling.js" defer="defer"></script>
     <script src="./js/home/header-nav-itens-active.js" defer="defer"></script>
+    <script src="https://cdn.lordicon.com/lusqsztk.js" defer="defer"></script>
 
     <!-- tab title: -->
     <title>Coffee Shop</title>
@@ -113,11 +114,17 @@
             <div class="header-sec-home-nav-icons">
               <div
                 class="icon-account"
+                id="icon-account"
                 title="Crie uma nova conta ou faça login"
               >
-                <!-- icon(in background) -->
+                <lord-icon
+                    src="https://cdn.lordicon.com/elkhjhci.json"
+                    trigger="click"
+                    colors="primary:#000000"
+                    style="width:100%;height:100%">
+                </lord-icon>
               </div>
-              <div class="icon-cart" title="Cafés te aguardando">
+              <div class="icon-cart" title="Leve seus cafés">
                 <!-- icon cart -->
                 <span class="quantity">0</span>
               </div>
@@ -140,7 +147,6 @@
                 <button type="button" class="btn-more">&plus;</button>
               </div>
               <div class="btn-add-cart-container">
-                button.btn
               </div>
             </div>
           </div>

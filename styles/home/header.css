@@ -47,11 +47,7 @@
 .icon-account {
   width: 2.5rem;
   height: 2.5rem;
-  background: url(../../img/icon-account.svg) transparent center center
-    no-repeat;
-  background-size: cover;
-  border-radius: 2rem;
-  transition: background-color 0.4s ease;
+  border-radius: 50%;
 }
 
 .icon-account:hover {
@@ -67,9 +63,8 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  background: url(../../img/coffee-cup-cart.png) transparent center center
+  background: url(../../img/coffee-cup-cart.png) transparent center center/cover
     no-repeat;
-  background-size: cover;
   cursor: pointer;
 }
 
@@ -134,7 +129,8 @@
   width: 24px;
   height: 24px;
   top: 60%;
-  background: url(../../img/coffee-beans-24.png);
+  background: url(../../img/coffee-beans-24.png) transparent center/cover
+    no-repeat;
   transition: transform 0.5s ease;
 }
 
