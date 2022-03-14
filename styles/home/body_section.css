@@ -1,0 +1,53 @@
+/*  */
+.sec-home-main-content {
+  width: inherit;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: aqua;
+}
+
+.sec-home-main-content-promo-price {
+  min-height: 20vh;
+  width: 25vw;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 10rem;
+}
+
+.title-promo-container {
+  width: 100%;
+  min-height: 10rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.title-promo {
+  color: var(--var-header-navbar-span-promo-title);
+  font-family: 'MonteCarlo', cursive;
+  font-size: 90px;
+  line-height: 1.2;
+}
+
+.promo-container {
+  flex-grow: 1;
+  min-height: inherit;
+  background-color: blueviolet;
+  display: flex;
+}
+
+.price-values {
+  width: 50%;
+  min-height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: dodgerblue;
+}
+
+/*  */
+.price-values > percentage-discount {}
+.price-values > price {}
+.price-values > last-price {}

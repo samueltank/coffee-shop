@@ -8,5 +8,6 @@
   --var-header-sec-home-border-buttom: #FCFCFC;
   --var-header-navbar-sec-home: #faf1df;
   --var-header-navbar-span-itens: rgba(71, 35, 10, 0.356);
-  --var-header-navbar-span-itens-hover: #47230A 
+  --var-header-navbar-span-itens-hover: #47230A;
+  --var-header-navbar-span-promo-title: #47230A;
 }

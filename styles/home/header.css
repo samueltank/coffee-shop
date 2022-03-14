@@ -52,7 +52,7 @@
 
 .icon-account:hover {
   cursor: pointer;
-  background-color: #0000000e;
+  background-color: var(--var-icon-account-background);
 }
 
 /* style div icon cart */
