@@ -2,6 +2,7 @@
 :root {
   --var-default-background: #faf1df; 
   --var-dark-color: #000000;
+  --var-white-color: #FCFCFC;
   --var-icon-account-background: rgba(0, 0, 0, 0.150);
   --var-fixed-navbar-shadow: rgba(0, 0, 0, 0.150);
   --var-header-sec-home-border-buttom: #FCFCFC;

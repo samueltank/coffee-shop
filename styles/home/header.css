@@ -69,7 +69,7 @@
 }
 
 .quantity {
-  color: #fcfcfc;
+  color: var(--var-white-color);
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: bold;
 }
