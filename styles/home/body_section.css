@@ -6,12 +6,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  background-color: aqua;
 }
 
 .sec-home-main-content-promo-price {
   min-height: 20vh;
-  width: 25vw;
+  width: 20vw;
   display: flex;
   flex-flow: column nowrap;
   margin-bottom: 10rem;
@@ -21,8 +20,7 @@
   flex-grow: 1;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
-  padding-left: 1rem;
+  justify-content: center;
 }
 
 .title-promo {
@@ -34,7 +32,6 @@
 
 .promo-container {
   flex-grow: 1;
-  background-color: blueviolet;
   display: flex;
 }
 
@@ -42,7 +39,6 @@
   flex-grow: 1;
   display: flex;
   flex-flow: column nowrap;
-  background-color: dodgerblue;
 }
 
 /* estilo dos preços */
@@ -75,6 +71,11 @@
   color: #5E483C;
   font-weight: bolder;
 }
+
+.price-values > .last-price {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
 .price-values > .last-price > span {
   padding-left: 1rem;
   color: #FFC286;
@@ -84,11 +85,101 @@
   padding-left: 1rem;
   color: #FFC286;
   font-size: 24px;
+  font-weight: bold;
   text-decoration: line-through;
 }
 
 /* estilos dos botões da promoção */
-.container-buy {
-  flex-grow: 3;
-  background-color: lightpink;
+.container-purchase {
+  flex-grow: 10;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.promo-quantity-container {
+  min-height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.promo-quantity-container .coffee-promo-quantity {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #2F2F2F;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* botâo remover */
+.promo-quantity-container > .btn-less {
+  border: none;
+  outline: none;
+  background-color: #FCFCFC;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in;
+}
+
+/* botão adicionar */
+.promo-quantity-container > .btn-more {
+  border: none;
+  outline: none;
+  background-color: #FCFCFC;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.promo-quantity-container > .btn-less:hover {
+  box-shadow: none;
+}
+
+.promo-quantity-container > .btn-less:active {
+  background-color: #e0e0e0;
+}
+
+.promo-quantity-container > .btn-more:hover {
+  box-shadow: none;
+}
+
+.promo-quantity-container > .btn-more:active {
+  background-color: #e0e0e0;
+}
+
+/* container botão adicionar carrinho */
+.btn-add-cart-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* botão adicionar carrinho */
+.btn-add-cart-container > #btn-buy-promo {
+  border: none;
+  outline: none;
+  background-color: #47230A;
+  color: #FCFCFC;
+  padding: 0.6rem 4rem;
+  border-radius: 50px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn-add-cart-container > #btn-buy-promo:hover {
+  box-shadow: none;
+}
+
+.btn-add-cart-container > #btn-buy-promo img {
+  width: 1.8rem;  
 }

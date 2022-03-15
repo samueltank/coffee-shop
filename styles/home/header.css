@@ -127,8 +127,8 @@
 
 .nav-list-item > a #coffee-bean-bar {
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 1.6rem;
+  height: 1.6rem;
   top: 60%;
   background: url(../../img/coffee-beans-24.png) transparent center/cover
     no-repeat;
