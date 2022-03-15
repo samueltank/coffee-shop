@@ -1,6 +1,6 @@
 /* home section */
 .sec-home {
-  width     : inherit;
+  width: inherit;
   min-height: inherit;
   display: flex;
   flex-flow: column nowrap;

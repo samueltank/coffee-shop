@@ -1,7 +1,7 @@
-/*  */
+/* estilos do conteúdo principal */
 .sec-home-main-content {
   width: inherit;
-  flex: 1;
+  flex: 1 1 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -18,36 +18,77 @@
 }
 
 .title-promo-container {
-  width: 100%;
-  min-height: 10rem;
+  flex-grow: 1;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
+  padding-left: 1rem;
 }
 
 .title-promo {
   color: var(--var-header-navbar-span-promo-title);
   font-family: 'MonteCarlo', cursive;
-  font-size: 90px;
+  font-size: 5.625rem;
   line-height: 1.2;
 }
 
 .promo-container {
   flex-grow: 1;
-  min-height: inherit;
   background-color: blueviolet;
   display: flex;
 }
 
 .price-values {
-  width: 50%;
-  min-height: 100%;
+  flex-grow: 1;
   display: flex;
   flex-flow: column nowrap;
   background-color: dodgerblue;
 }
 
-/*  */
-.price-values > percentage-discount {}
-.price-values > price {}
-.price-values > last-price {}
+/* estilo dos preços */
+
+.percentage-discount-container {
+  width: 6rem;
+  height: 3rem;
+  background-color: #47230A;
+  border-radius: 0 25px 25px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.price-values > .percentage-discount-container > .percentage-discount {
+  color: #FCFCFC;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.price-values > .price > span {
+  padding-left: 1rem;
+  font-size: 18px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #5E483C;
+}
+.price-values > .price > span:nth-child(2) {
+  padding-left: 1rem;
+  font-size: 48px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #5E483C;
+  font-weight: bolder;
+}
+.price-values > .last-price > span {
+  padding-left: 1rem;
+  color: #FFC286;
+  font-size: 18px;
+}
+.price-values > .last-price > span:nth-child(2) {
+  padding-left: 1rem;
+  color: #FFC286;
+  font-size: 24px;
+  text-decoration: line-through;
+}
+
+/* estilos dos botões da promoção */
+.container-buy {
+  flex-grow: 3;
+  background-color: lightpink;
+}
