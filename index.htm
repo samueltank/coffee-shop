@@ -15,7 +15,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- favicon: -->
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icon_coffee.png"
+      type="image/x-icon"
+    />
 
     <!-- fonts: -->
     <!-- MonteCarlo (font-family: 'MonteCarlo', cursive;) -->
@@ -61,8 +65,10 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/home/section.css" />
     <link rel="stylesheet" href="./styles/home/header.css" />
-    <link rel="stylesheet" href="./styles/home/body_section.css" />
+    <link rel="stylesheet" href="./styles/home/body-section.css" />
+    <link rel="stylesheet" href="./styles/home/content-promo-price.css" />
     <link rel="stylesheet" href="./styles/home/divider.css" />
+
     <!-- 
       folha executada na condição de media
 
@@ -79,7 +85,11 @@
       defer="defer"
     ></script>
     <script src="./js/home/header_nav_scrolling.js" defer="defer"></script>
-    <script src="https://cdn.lordicon.com/lusqsztk.js" defer="defer"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/a6500d6e57.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- tab title: -->
     <title>Coffee Shop</title>
@@ -91,7 +101,7 @@
         <div class="container-sec-home-header">
           <header class="header-sec-home">
             <div class="header-sec-home-logo">
-              Java Coffee<!-- logo in background -->
+              <!-- logo in background -->
             </div>
             <nav class="header-sec-home-nav">
               <ul class="header-sec-home-nav-list">
@@ -121,13 +131,7 @@
                 id="icon-account"
                 title="Crie uma nova conta ou faça login"
               >
-                <lord-icon
-                  src="https://cdn.lordicon.com/elkhjhci.json"
-                  trigger="click"
-                  colors="primary:#000000"
-                  style="width: 100%; height: 100%"
-                >
-                </lord-icon>
+                <i class="fa-solid fa-user" id="user-icon"></i>
               </div>
               <div class="icon-cart" title="Leve seus cafés">
                 <!-- icon cart -->
@@ -138,6 +142,13 @@
         </div>
 
         <div class="sec-home-main-content">
+          <div class="txt-back abs">
+            <span>café de verdade</span>
+          </div>
+          <div class="coffee-bean1 abs"></div>
+          <div class="coffee-bean2 abs"></div>
+          <div class="coffee-bean3 abs"></div>
+          <div class="coffee-bean4 abs"></div>
           <div class="sec-home-main-content-promo-price">
             <div class="title-promo-container">
               <span class="title-promo">Promoção</span>
@@ -159,7 +170,7 @@
                 <div class="btn-add-cart-container">
                   <button type="button" id="btn-buy-promo">
                     <img
-                      src="./img/cesto_branco.png"
+                      src="./assets/cesto_branco.png"
                       alt="ícone de cesta de compras"
                     />
                   </button>

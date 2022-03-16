@@ -10,7 +10,7 @@
 .sticky {
   position: fixed;
   width: inherit;
-  height: 4rem !important;
+  height: 4rem;
   box-shadow: 0 20px 50px var(--var-fixed-navbar-shadow);
 }
 
@@ -29,8 +29,10 @@
 
 /* style logo */
 .header-sec-home-logo {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
+  width: 5rem;
+  height: 5rem;
+  background: no-repeat center/50% transparent
+    url(../../assets/Java_programming_language_logo.svg);
   cursor: default;
 }
 
@@ -46,9 +48,18 @@
 
 /* style div icon account */
 .icon-account {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.1rem;
+  height: 2.1rem;
   border-radius: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+.icon-account > #user-icon {
+  font-size: 1.7rem;
 }
 
 .icon-account:hover {
@@ -64,8 +75,8 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  background: url(../../img/coffee-cup-cart.png) transparent center center/cover
-    no-repeat;
+  background: no-repeat center/cover transparent
+    url(../../assets/coffee_cup_cart.png);
   cursor: pointer;
 }
 
@@ -130,7 +141,7 @@
   width: 1.6rem;
   height: 1.6rem;
   top: 60%;
-  background: url(../../img/coffee-beans-24.png) transparent center/cover
+  background: url(../../assets/coffee_move_nav.png) transparent center/100%
     no-repeat;
   transition: transform 0.5s ease;
 }
@@ -139,19 +150,4 @@
 .nav-list-item > a.active > span {
   padding-bottom: 1.2rem;
   color: var(--var-header-navbar-span-itens-hover);
-}
-
-/* anima a semente de café da barra de navegação: */
-.drag-ani {
-  animation: drag 0.5s ease;
-}
-
-/* aninação de arrasto: */
-@keyframes drag {
-  from {
-    transform: scaleX(0.6);
-  }
-  to {
-    transform: scaleX(1);
-  }
 }

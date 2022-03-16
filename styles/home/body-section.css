@@ -1,0 +1,12 @@
+/* estilos do conteúdo principal */
+.sec-home-main-content {
+  position: relative;
+  width: inherit;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/*  */
