@@ -9,4 +9,56 @@
   justify-content: flex-start;
 }
 
-/*  */
+/* aplicação da propriedade absolute */
+.abso {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* style do título em backgroun */
+/* container: */
+.sec-home > .txt-back {
+  position: absolute;
+  width: 100%;
+  height: 10rem;
+  top: 8rem;
+  overflow: hidden;
+} 
+
+/* style do text */
+.sec-home > .txt-back > svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.sec-home > .txt-back > svg {
+  font-family: 'Poppins', sans-serif;
+  font-size: 96px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.sec-home > .txt-back > svg > text {
+  stroke: rgba(71, 35, 10, 0.09);
+  stroke-width: 2px;
+  fill: transparent;
+}
+
+/* style das grãoes de café do background */
+.sec-home > .sec-home-main-content > .coffee-bean1 {
+  
+}
+
+.sec-home > .sec-home-main-content > .coffee-bean2 {
+  
+}
+
+.sec-home > .sec-home-main-content > .coffee-bean3 {
+  
+}
+
+.sec-home > .sec-home-main-content > .coffee-bean4 {
+  
+}
