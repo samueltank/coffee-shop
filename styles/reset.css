@@ -1,8 +1,11 @@
 /* default reset */
 
-*, *::after, *::before { 
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   vertical-align: baseline;
+  user-select: none;
 }

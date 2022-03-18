@@ -9,13 +9,6 @@
   justify-content: flex-start;
 }
 
-/* aplicação da propriedade absolute */
-.abso {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 /* style do título em backgroun */
 /* container: */
 .sec-home > .txt-back {
@@ -24,7 +17,8 @@
   height: 10rem;
   top: 8rem;
   overflow: hidden;
-} 
+  z-index: 1;
+}
 
 /* style do text */
 .sec-home > .txt-back > svg {
@@ -34,8 +28,8 @@
 }
 
 .sec-home > .txt-back > svg {
-  font-family: 'Poppins', sans-serif;
-  font-size: 96px;
+  font-family: "Poppins", sans-serif;
+  font-size: 70px;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -46,19 +40,40 @@
   fill: transparent;
 }
 
-/* style das grãoes de café do background */
-.sec-home > .sec-home-main-content > .coffee-bean1 {
-  
+/* estilo das sementes de café no background */
+.abso {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
-.sec-home > .sec-home-main-content > .coffee-bean2 {
-  
+/* semente 1 */
+.sec-home-main-content > .coffee-bean1 {
+  width: 5%;
+  height: 15%;
+  top: 12%;
+  left: 8%;
+  background: url(../../assets/one_coffee.svg) transparent center/100%  
+    no-repeat; 
 }
 
-.sec-home > .sec-home-main-content > .coffee-bean3 {
-  
+.sec-home-main-content > .coffee-bean2 {
+  width: 5%;
+  height: 15%;
+  top: 60%;
+  left: 7%;
+  background: url(../../assets/one_coffee.svg) transparent center/100% 
+    no-repeat;
+  transform: rotate(110deg);
 }
 
-.sec-home > .sec-home-main-content > .coffee-bean4 {
-  
+.sec-home-main-content > .coffee-bean3 {
+  width: 5%;
+  height: 15%;
+  top: 25%;
+  left: 80%;
+  background: url(../../assets/one_coffee.svg) transparent center/100% 
+    no-repeat;
+  transform: rotate(200deg);
 }

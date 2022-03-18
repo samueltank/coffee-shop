@@ -1,13 +1,13 @@
 /* page colors */
 :root {
-  --var-default-background: #faf1df; 
+  --var-default-background: #faf1df;
   --var-dark-color: #000000;
-  --var-white-color: #FCFCFC;
-  --var-icon-account-background: rgba(0, 0, 0, 0.150);
-  --var-fixed-navbar-shadow: rgba(0, 0, 0, 0.150);
-  --var-header-sec-home-border-buttom: #FCFCFC;
+  --var-white-color: #fcfcfc;
+  --var-icon-account-background: rgba(0, 0, 0, 0.15);
+  --var-fixed-navbar-shadow: rgba(0, 0, 0, 0.15);
+  --var-header-sec-home-border-buttom: #fcfcfc;
   --var-header-navbar-sec-home: #faf1df;
   --var-header-navbar-span-itens: rgba(71, 35, 10, 0.356);
-  --var-header-navbar-span-itens-hover: #47230A;
-  --var-header-navbar-span-promo-title: #47230A;
+  --var-header-navbar-span-itens-hover: #47230a;
+  --var-header-navbar-span-promo-title: #47230a;
 }

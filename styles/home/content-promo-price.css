@@ -35,20 +35,21 @@
 
 /* estilo dos preços */
 
-.percentage-discount-container {
-  width: 6rem;
+.percentage-discount-container { /* container com o desconto */
+  width: 5.2rem;
   height: 3rem;
   background-color: #47230A;
   border-radius: 0 25px 25px 0;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .price-values > .percentage-discount-container > .percentage-discount {
   color: #FCFCFC;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  margin-left: 0.4rem;
 }
 .price-values > .price > span {
   padding-left: 1rem;

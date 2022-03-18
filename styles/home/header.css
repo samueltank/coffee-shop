@@ -3,7 +3,8 @@
   width: inherit;
   height: 6rem;
   background-color: var(--var-header-navbar-sec-home);
-  transition: height 0.5s ease;
+  transition: height 0.4s ease;
+  z-index: 2;
 }
 
 /* animação da barra de navegação com evento scroll: */
@@ -35,6 +36,13 @@
   background: no-repeat center/50% transparent
     url(../../assets/Java_programming_language_logo.svg);
   cursor: default;
+  transition: all 0.4s ease-out;
+}
+
+/* reajuste do tamanho da logo */
+.dynami-logo {
+  width: 4rem;
+  height: 4rem;
 }
 
 /* style div icons */
