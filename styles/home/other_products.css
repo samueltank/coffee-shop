@@ -1,0 +1,77 @@
+.sec-home-main-content-promo-other-products {
+  min-height: 30rem;
+  width: 23rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-home-main-content-promo-other-products > .product-one {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.sec-home-main-content-promo-other-products > .product-two {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.sec-home-main-content-promo-other-products > .product-one > .img-container {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1px solid #84513a;
+  box-shadow: 0 20px 50px #84513a77;
+  background-color: #fcfcfc;
+}
+
+.sec-home-main-content-promo-other-products > .product-two > .img-container {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1px solid #00a9c0;
+  box-shadow: 0 20px 50px #00aac059;
+  background-color: #fcfcfc;
+}
+
+/* stylo das imgs */
+.sec-home-main-content-promo-other-products
+  > .product-one
+  > .img-container
+  > img {
+  width: 5rem;
+  transform: rotate(-10deg);
+}
+
+.sec-home-main-content-promo-other-products
+  > .product-two
+  > .img-container
+  > img {
+  width: 5rem;
+  transform: rotate(10deg);
+}
+
+/* estilo dos títulos */
+.sec-home-main-content-promo-other-products .descri-product {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}

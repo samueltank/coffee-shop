@@ -1,0 +1,116 @@
+/* estilização do produto em destaque central */
+
+.sec-home-main-content-promo-product {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  background: url(../../assets/base_main_product.svg) transparent center 100%/50rem
+    no-repeat;
+  z-index: 3;
+}
+
+.sec-home-main-content-promo-product > #special-product {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+  justify-content: center;
+}
+.sec-home-main-content-promo-product > .product-info {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.sec-home-main-content-promo-product > .product-info > .info-container {
+  display: flex;
+  width: 10rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+.sec-home-main-content-promo-product
+  > .product-info
+  > .info-container
+  > .product-info-title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 18px;
+  color: #fcfcfc;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.sec-home-main-content-promo-product
+  > .product-info
+  > .info-container
+  > .product-info {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fcfcfc;
+  text-transform: uppercase;
+}
+
+.sec-home-main-content-promo-product > #special-product > .center-container {
+  width: 40rem;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-home-main-content-promo-product
+  > #special-product
+  > .center-container
+  > img {
+  position: absolute;
+  transform: rotate(-25deg);
+}
+
+.sec-home-main-content-promo-product
+  > #special-product
+  > .center-container
+  > img:nth-child(1) {
+  width: 35rem;
+}
+
+.sec-home-main-content-promo-product
+  > #special-product
+  > .center-container
+  > img:nth-child(2) {
+  width: 30rem;
+}
+
+.sec-home-main-content-promo-product
+> #special-product
+> .center-container
+> img:nth-child(3) {
+  width: 35rem;
+}
+
+#special-product > .arrows {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  align-self: center;
+  margin-top: 2rem;
+}
+
+.sec-home-main-content-promo-product > #special-product > .arrows > i {
+  font-size: 2rem;
+  color: #cfcfcf;
+}
+
+.sec-home-main-content-promo-product
+  > #special-product
+  > .arrows
+  > i:nth-child(1) {
+  color: white;
+}

@@ -31,10 +31,6 @@ function active() {
   let move = (elementThis.AxisX - beanObject.AxisX) +
     (elementThis.center - beanObject.center);
 
-  console.log(elementThis);
-  console.log(beanObject);
-  console.log(move);  
-
   bean.style.transform += `translate(${move}px, 0px)`;
 }
 

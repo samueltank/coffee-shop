@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <!-- metadatas: -->
+    <!-- METADADOS -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,19 +9,19 @@
     <meta name="author" content="Samuel Tank" />
     <meta
       name="description"
-      content="Projeto de loja virtual para a venda de bebidas energéticas em 
-      estilo landing page"
+      content="Projeto de loja virtual para a venda de bebidas a base de
+        cafeína em estilo landing page"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- favicon: -->
+    <!-- FAVICON -->
     <link
       rel="shortcut icon"
       href="./assets/icon_coffee.png"
       type="image/x-icon"
     />
 
-    <!-- fonts: -->
+    <!-- FONTS -->
     <!-- MonteCarlo {font-family: 'MonteCarlo', cursive;} -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -71,15 +71,17 @@
       rel="stylesheet"
     />
 
-    <!-- links CSS -->
-    <link rel="stylesheet" href="./styles/root-colors.css" />
+    <!-- LINKS CSS -->
+    <link rel="stylesheet" href="./styles/root_colors.css" />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/body.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/home/section.css" />
     <link rel="stylesheet" href="./styles/home/header.css" />
-    <link rel="stylesheet" href="./styles/home/body-section.css" />
-    <link rel="stylesheet" href="./styles/home/content-promo-price.css" />
+    <link rel="stylesheet" href="./styles/home/body_section.css" />
+    <link rel="stylesheet" href="./styles/home/content_promo_price.css" />
+    <link rel="stylesheet" href="./styles/home/product.css" />
+    <link rel="stylesheet" href="./styles/home/other_products.css" />
     <link rel="stylesheet" href="./styles/home/divider.css" />
 
     <!-- 
@@ -92,7 +94,7 @@
       />
      -->
 
-    <!-- scripts -->
+    <!-- SCRIPTS -->
     <script
       src="./js/home/header_nav_itens_bean_move.js"
       defer="defer"
@@ -154,17 +156,26 @@
           </header>
         </div>
 
+        <!-- DECORAÇÃO DE BACKGROUND -->
         <div class="txt-back">
           <!-- <span>café de verdade</span> -->
           <svg viewBox="0 0 1200 120" xmlns="https://www.w3.org/2000/svg">
-            <text x="18%" y="80">café de verdade</text>
+            <text x="22%" y="80">café de verdade</text>
           </svg>
         </div>
+
+        <!-- sementes de fundo -->
+        <div class="coffee-bean1 abso"><!-- imagem em background CSS  --></div>
+        <div class="coffee-bean2 abso"><!-- imagem em background CSS  --></div>
+        <div class="coffee-bean3 abso"><!-- imagem em background CSS  --></div>
+        <div class="coffee-bean4 abso"><!-- imagem em background CSS  --></div>
+
+        <!-- base do produto principal -->
+        <div class="base-main-product"><!-- imagem em background CSS --></div>
+
+        <!-- CONTEÚDO PRICIPAL -->
         <div class="sec-home-main-content">
-          <div class="coffee-bean1 abso"></div>
-          <div class="coffee-bean2 abso"></div>
-          <div class="coffee-bean3 abso"></div>
-          <div class="coffee-bean4 abso"></div>
+          <!-- preço e quantidade de produtos da promoção -->
           <div class="sec-home-main-content-promo-price">
             <div class="title-promo-container">
               <span class="title-promo">Promoção</span>
@@ -191,16 +202,66 @@
               </div>
             </div>
           </div>
+          <!-- produto em promoção -->
           <div class="sec-home-main-content-promo-product">
-            <article id="special-product"></article>
+            <div id="special-product">
+              <div class="center-container">
+                <!-- itens que estão no centro da home page -->
+                <img src="./assets/coffeeliquidd.png" alt="" />
+                <img
+                  src="./assets/promo_coffee.png"
+                  alt="copo descartável de café com tampa preta, corpo branco e 
+                  tarja central com logo estampada centralizado na tela"
+                />
+                <img src="./assets/coffeeeewithshadow.png" alt="" />
+              </div>
+              <!-- ícones das setas dos produtos em promoção -->
+              <div class="arrows">
+                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+            </div>
+            <!-- informações dos produtos -->
+            <div class="product-info">
+              <div class="origin info-container">
+                <span class="product-info-title">origem</span>
+                <span class="product-info">arábica</span>
+              </div>
+              <div class="intensity info-container">
+                <span class="product-info-title">intensidade</span>
+                <span class="product-info">suave</span>
+              </div>
+              <div class="ingredients info-container">
+                <span class="product-info-title">ingredientes</span>
+                <span class="product-info">100% café</span>
+              </div>
+            </div>
           </div>
           <div class="sec-home-main-content-promo-other-products">
-            <article id="product-card1"></article>
-            <article id="product-card2"></article>
+            <div class="product-one">
+              <div class="img-container">
+                <img
+                src="./assets/spccup.png"
+                alt="copo para café de papelão marrom, com tampa preta e logo
+                no centro"
+                />
+              </div>
+              <span class="descri-product">café chocolate</span>
+            </div>
+            <div class="product-two">
+              <div class="img-container">
+                <img
+                src="./assets/spccup.png"
+                alt="copo para café de papelão marrom, com tampa preta e logo 
+                no centro"
+                />
+              </div>
+              <span class="descri-product">café gelado</span>
+            </div>
           </div>
         </div>
 
-        <!-- svg buttom (by https://www.shapedivider.app/) -->
+        <!-- [svg by https://www.shapedivider.app/] -->
         <div class="shape-divider-bottom">
           <svg
             data-name="Layer 1"

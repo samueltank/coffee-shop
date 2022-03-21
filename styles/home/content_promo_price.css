@@ -2,7 +2,7 @@
 
 .sec-home-main-content-promo-price {
   height: 17rem;
-  width: 25rem;
+  width: 23rem;
   display: flex;
   flex-flow: column nowrap;
   margin-bottom: 10rem;
@@ -36,9 +36,9 @@
 /* estilo dos preços */
 
 .percentage-discount-container { /* container com o desconto */
-  width: 5.2rem;
+  width: 5.5rem;
   height: 3rem;
-  background-color: #47230A;
+  background-color: #FCFCFC;
   border-radius: 0 25px 25px 0;
   display: flex;
   flex-flow: row nowrap;
@@ -46,7 +46,7 @@
   align-items: center;
 }
 .price-values > .percentage-discount-container > .percentage-discount {
-  color: #FCFCFC;
+  color: #F8981D;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   margin-left: 0.4rem;
