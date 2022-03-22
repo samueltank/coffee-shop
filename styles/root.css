@@ -1,5 +1,9 @@
 /* page colors */
 :root {
+  /* scroll suaves... */
+  scroll-behavior: smooth;
+
+  /* variáveis para cor */
   --var-default-background: #faf1df;
   --var-dark-color: #000000;
   --var-white-color: #fcfcfc;

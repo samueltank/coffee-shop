@@ -1,5 +1,6 @@
 /* home section */
 .sec-home {
+  position: relative;
   width: inherit;
   min-height: inherit;
   display: flex;
@@ -7,4 +8,5 @@
   justify-content: flex-start;
   align-items: center;
   background-color: var(--var-default-background);
+  padding-top: 6rem;
 }

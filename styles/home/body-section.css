@@ -52,8 +52,9 @@
 .coffee-bean1 {
   width: 5%;
   height: 15%;
-  top: 12%;
-  left: 8%;
+  top: 20%;
+  left: 10%;
+  transform: rotate(-10deg);
   background: url(../../assets/one_coffee.svg) transparent center/100%  
     no-repeat; 
 }
@@ -61,8 +62,8 @@
 .coffee-bean2 {
   width: 5%;
   height: 15%;
-  top: 60%;
-  left: 7%;
+  top: 65%;
+  left: 5%;
   background: url(../../assets/one_coffee.svg) transparent center/100% 
     no-repeat;
   transform: rotate(110deg);
@@ -71,7 +72,7 @@
 .coffee-bean3 {
   width: 5%;
   height: 15%;
-  top: 20%;
+  top: 25%;
   left: 80%;
   background: url(../../assets/one_coffee.svg) transparent center/100% 
     no-repeat;

@@ -1,1 +1,42 @@
-.sec
+.sec-boutique {
+  min-height: 100vh;
+  width: 100%;
+  background: url(/assets/boutique_background.jpg) rgba(0, 0, 0, 0.6) center/
+    100% no-repeat fixed;
+  background-blend-mode: darken;
+}
+
+.sec-boutique > .container-center-text {
+  display: flex;
+  flex-flow: column nowrap;
+  width: inherit;
+  min-height: inherit;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.sec-boutique > .container-center-text > span:nth-child(1) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: italic;
+  color: #FCFCFC;
+  text-transform: capitalize;
+}
+
+.sec-boutique > .container-center-text > span:nth-child(2) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 96px;
+  font-weight: bold;
+  color: #FCFCFC;
+  text-transform: uppercase;
+}
+
+.sec-boutique > .container-center-text > span:nth-child(3) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  color: #FCFCFC;
+  text-transform: capitalize;
+}

@@ -1,0 +1,187 @@
+.sec-dest {
+  width: 100%;
+  min-height: 100vh;
+  background-color: lightcoral;
+  display: inline-block;
+  
+}
+
+.sec-dest > .container-content {
+  width: inherit;
+  min-height: inherit;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.sec-dest > .container-content > .title-dest {
+  font-family: "MonteCarlo", cursive;
+  font-size: 96px;
+  color: #5d3c25;
+}
+
+.sec-dest > .container-content > .container-with-arrows {
+  width: 28rem;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 50px #84513a;
+  overflow: auto;
+  border-radius: 2rem;
+  scroll-snap-type: x mandatory; /* snap no pai */
+  scroll-behavior: smooth;
+  /* some com a barra no firefox! */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.sec-dest > .container-content > .container-with-arrows::-webkit-scrollbar {
+  display: none;
+}
+
+/* estilo dos cards */
+
+.container-dest-cards {
+  margin: 0 2rem 0 2rem;
+  width: 20rem;
+  height: 35rem;
+  border: #84513a solid 15px;
+  border-radius: 2rem;
+  overflow: hidden;
+  flex: none;
+  scroll-snap-align: center; /* snap no filho */
+  pointer-events: none; /* desativa os eventos target no elemento */
+}
+
+.container-dest-cards > .dest-card {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+}
+
+.container-dest-cards > .dest-card > .container-dest-card-img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container-dest-cards > .dest-card > .container-dest-card-img > img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container-dest-cards > .dest-card > .container-info-card {
+  font-family: "Montserrat", sans-serif;
+  flex-grow: 3;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+}
+
+.container-dest-cards > .dest-card > .container-info-card > span:nth-child(1) {
+  color: gold;
+  font-size: 1.5rem;
+  margin-left: 15%;
+}
+
+.container-dest-cards > .dest-card > .container-info-card > span:nth-child(2) {
+  font-size: 1.5rem;
+  margin-left: 15%;
+}
+
+.container-dest-cards > .dest-card > .container-info-card > span:nth-child(3) {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-left: 15%;
+}
+
+.container-dest-cards > .dest-card > .container-info-card > span:nth-child(4) {
+  font-size: 1.5rem;
+  margin-left: 15%;
+  color: #525252;
+}
+
+.container-dest-cards > .dest-card > .footer-dest-card {
+  font-family: "Montserrat", sans-serif;
+  flex-grow: 4;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+
+.container-dest-cards > .dest-card > .footer-dest-card > .container-quantity {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-dest-cards
+  > .dest-card
+  > .footer-dest-card
+  > .container-quantity
+  > button:nth-child(1) {
+  width: 3rem;
+  height: 3rem;
+  background-color: #84513a;
+  color: #fcfcfc;
+  font-size: 2rem;
+  border: none;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.container-dest-cards
+  > .dest-card
+  > .footer-dest-card
+  > .container-quantity
+  > button:nth-child(3) {
+  width: 3rem;
+  height: 3rem;
+  background-color: #84513a;
+  color: #fcfcfc;
+  font-size: 2rem;
+  border: none;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.container-dest-cards
+  > .dest-card
+  > .footer-dest-card
+  > .container-quantity
+  > .card-contity-product {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.container-btn-add-car-dest-product {
+  width: 7rem;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 10px 10px 0;
+}
+
+.container-btn-add-car-dest-product > button {
+  width: inherit;
+  height: 7rem;
+  border: none;
+  font-size: 2.5rem;
+  background-color: #84513a;
+  color: #fcfcfc;
+  border-top-left-radius: 2rem;
+}

@@ -1,8 +1,9 @@
 /* divider style */
 .shape-divider-bottom {
   position: absolute;
-  bottom: 0;
   left: 0;
+  right: 0;
+  top: calc(100vh - 150px);
   width: 100%;
   overflow: hidden;
   line-height: 0;

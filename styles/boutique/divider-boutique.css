@@ -1,0 +1,19 @@
+.shape-divider-boutique {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.shape-divider-boutique svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 200px;
+}
+
+.shape-divider-boutique .shape-fill {
+  fill: #47230A;
+}

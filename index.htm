@@ -72,7 +72,7 @@
     />
 
     <!-- LINKS CSS -->
-    <link rel="stylesheet" href="./styles/root-colors.css" />
+    <link rel="stylesheet" href="./styles/root.css" />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/body.css" />
     <link rel="stylesheet" href="./styles/main.css" />
@@ -85,8 +85,10 @@
     <link rel="stylesheet" href="./styles/home/other-products.css" />
     <link rel="stylesheet" href="./styles/home/divider.css" />
     <!-- BOUTIQUE -->
-    <link rel="stylesheet" href="./styles/boutique/sec-boutique.css">
-
+    <link rel="stylesheet" href="./styles/boutique/sec-boutique.css" />
+    <link rel="stylesheet" href="./styles/boutique/divider-boutique.css" />
+    <!-- DESTAQUES DO DIA -->
+    <link rel="stylesheet" href="./styles/dest/sec-dest.css" />
     <!-- 
       folha executada na condição de media
 
@@ -98,15 +100,23 @@
      -->
 
     <!-- SCRIPTS -->
+    <!-- HOME -->
     <script
       src="./js/home/header-nav-itens-bean-move.js"
       defer="defer"
     ></script>
     <script src="./js/home/header-nav-scrolling.js" defer="defer"></script>
+    <!-- DESTAQUE DO DIA -->
+    <script src="./js/dest/scrolling.js" defer="defer"></script>
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/a6500d6e57.js"
       crossorigin="anonymous"
+    ></script>
+    <!-- drag scroll lib -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"
+      defer="defer"
     ></script>
 
     <!-- tab title: -->
@@ -164,7 +174,7 @@
         <div class="txt-back">
           <!-- <span>café de verdade</span> -->
           <svg viewBox="0 0 1200 120" xmlns="https://www.w3.org/2000/svg">
-            <text x="22%" y="80">café de verdade</text>
+            <text x="21%" y="80">café de verdade</text>
           </svg>
         </div>
 
@@ -211,13 +221,14 @@
             <div id="special-product">
               <div class="center-container">
                 <!-- itens que estão no centro da home page -->
-                <img src="./assets/coffeeliquidd.png" alt="" />
+                <img src="./assets/coffeeliquidd.png" alt="" width="100" />
                 <img
                   src="./assets/promo_coffee.png"
                   alt="copo descartável de café com tampa preta, corpo branco e 
                   tarja central com logo estampada centralizado na tela"
+                  width="100"
                 />
-                <img src="./assets/coffeeeewithshadow.png" alt="" />
+                <img src="./assets/coffeeeewithshadow.png" alt="" width="100" />
               </div>
               <!-- ícones das setas dos produtos em promoção -->
               <div class="arrows">
@@ -245,9 +256,10 @@
             <div class="product-one">
               <div class="img-container">
                 <img
-                src="./assets/spccup.png"
-                alt="copo para café de papelão marrom, com tampa preta e logo
-                no centro"
+                  src="./assets/spccup.png"
+                  alt="copo para café de papelão marrom, com tampa preta e logo 
+                  no centro"
+                  width="100"
                 />
               </div>
               <span class="descri-product">café chocolate</span>
@@ -255,9 +267,10 @@
             <div class="product-two">
               <div class="img-container">
                 <img
-                src="./assets/spccup.png"
-                alt="copo para café de papelão marrom, com tampa preta e logo 
-                no centro"
+                  src="./assets/spccup.png"
+                  alt="copo para café de papelão marrom, com tampa preta e logo 
+                  no centro"
+                  width="100"
                 />
               </div>
               <span class="descri-product">café gelado</span>
@@ -300,10 +313,169 @@
           </svg>
         </div>
       </section>
-
-      <section class="sec-boutique">
-        
-      </section>
     </main>
+
+    <!-- SEÇÃO BOUTIQUE -->
+    <section class="sec-boutique">
+      <div class="shape-divider-boutique">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <rect x="1200" height="3.6"></rect>
+          <rect height="3.6"></rect>
+          <path
+            d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div class="container-center-text">
+        <span>visite-nos!</span>
+        <span>boutique</span>
+        <span>
+          av.dos autonomistas, 1400 - vila yara, osasco - SP, 06020-010
+        </span>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DESTAQUES DO DIA -->
+    <section class="sec-dest">
+      <div class="container-content">
+        <div class="title-dest">
+          <span>destaques do dia</span>
+        </div>
+        <div class="container-with-arrows">
+          <!-- arrows in ::after e ::before -->
+
+          <!-- CARDS DESTAQUE -->
+          <div class="container-dest-cards">
+            <div class="dest-card1 dest-card">
+              <div class="container-dest-card-img">
+                <img
+                  src="./assets/coffe_item.png"
+                  alt="copo de café com tampa preta, corpo branco em plástico 
+                  coberto por uma fina camada de papelão"
+                  width="100"
+                />
+              </div>
+              <div class="container-info-card">
+                <span class="stars">&starf;&starf;&starf;&starf;&starf;</span>
+                <span class="classi">café forte</span>
+                <span class="title-product-card">café árabe</span>
+                <span class="price">R$7,00</span>
+              </div>
+              <div class="footer-dest-card">
+                <div class="container-quantity">
+                  <button type="button">&minus;</button>
+                  <span class="card-contity-product">1</span>
+                  <button type="button">&plus;</button>
+                </div>
+                <div class="container-btn-add-car-dest-product">
+                  <button type="button">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-dest-cards">
+            <div class="dest-card1 dest-card">
+              <div class="container-dest-card-img">
+                <img
+                  src="./assets/coffe_item.png"
+                  alt="copo de café com tampa preta, corpo branco em plástico 
+                  coberto por uma fina camada de papelão"
+                  width="100"
+                />
+              </div>
+              <div class="container-info-card">
+                <span class="stars">&starf;&starf;&starf;&starf;&starf;</span>
+                <span class="classi">café fraco</span>
+                <span class="title-product-card">café árabe</span>
+                <span class="price">R$6,00</span>
+              </div>
+              <div class="footer-dest-card">
+                <div class="container-quantity">
+                  <button type="button">&minus;</button>
+                  <span class="card-contity-product">1</span>
+                  <button type="button">&plus;</button>
+                </div>
+                <div class="container-btn-add-car-dest-product">
+                  <button type="button">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-dest-cards">
+            <div class="dest-card1 dest-card">
+              <div class="container-dest-card-img">
+                <img
+                  src="./assets/coffe_item.png"
+                  alt="copo de café com tampa preta, corpo branco em plástico 
+                  coberto por uma fina camada de papelão"
+                  width="100"
+                />
+              </div>
+              <div class="container-info-card">
+                <span class="stars">&starf;&starf;&starf;&starf;&starf;</span>
+                <span class="classi">café com choco</span>
+                <span class="title-product-card">café árabe</span>
+                <span class="price">R$8,00</span>
+              </div>
+              <div class="footer-dest-card">
+                <div class="container-quantity">
+                  <button type="button">&minus;</button>
+                  <span class="card-contity-product">1</span>
+                  <button type="button">&plus;</button>
+                </div>
+                <div class="container-btn-add-car-dest-product">
+                  <button type="button">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-dest-cards">
+            <div class="dest-card1 dest-card">
+              <div class="container-dest-card-img">
+                <img
+                  src="./assets/coffe_item.png"
+                  alt="copo de café com tampa preta, corpo branco em plástico 
+                  coberto por uma fina camada de papelão"
+                  width="100"
+                />
+              </div>
+              <div class="container-info-card">
+                <span class="stars">&starf;&starf;&starf;&starf;&starf;</span>
+                <span class="classi">café forte gelado</span>
+                <span class="title-product-card">café árabe</span>
+                <span class="price">R$5,00</span>
+              </div>
+              <div class="footer-dest-card">
+                <div class="container-quantity">
+                  <button type="button">&minus;</button>
+                  <span class="card-contity-product">1</span>
+                  <button type="button">&plus;</button>
+                </div>
+                <div class="container-btn-add-car-dest-product">
+                  <button type="button">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
