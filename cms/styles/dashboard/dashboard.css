@@ -1,19 +1,16 @@
 body {
   width: 100%;
   height: 100vh;
-  background-color: darkblue;
 }
 
 main {
   width: 100%;
   height: 100%;
-  background-color: aqua;
 }
 
 #sec-cms {
   width: 100%;
   height: 100%;
-  background-color: gold;
   display: flex;
   flex-flow: column nowrap;
 }
@@ -21,11 +18,54 @@ main {
 header {
   width: 100%;
   height: 150px;
-  background-color: dodgerblue;
+  background-color: 47230A;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 4rem 0 4rem;
+}
+
+nav {
+  width: 100%;
+  height: 200px;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
+.container-icones {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.nav-icon {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.opt {
+  font-size: 0.9rem;
+  margin: auto;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-icon .icon {
+  width: 100%;
+  height: 75%;  
 }
 
 .cms-name > span {
@@ -40,14 +80,26 @@ header {
   font-size: 24px;
 }
 
-nav {
-  width: 100%;
-  height: 125px;
-  background-color: blueviolet;
-}
-
 .sec-content {
   flex-grow: 1;
+}
+
+.logout {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-logout {
+  width: 100px;
+  height: 100px;
+
+}
+
+.icon-logout img {
+  width: 100%;
+  height: 100%;
 }
 
 footer {
@@ -57,5 +109,6 @@ footer {
   justify-content: center;
   height: 60px;
   width: 100%;
-  background-color: chartreuse;
+  color: white;
+  background-color: #47230A;
 }
