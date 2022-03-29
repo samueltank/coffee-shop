@@ -1,95 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <!-- METADADOS -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=7" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <meta name="author" content="Samuel Tank" />
-    <meta
-      name="description"
-      content="Projeto de loja virtual para a venda de bebidas a base de
-        cafeína em estilo landing page"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FAVICON -->
-    <link
-      rel="shortcut icon"
-      href="./assets/icon_coffee.png"
-      type="image/x-icon"
-    />
+<head>
+  <!-- *** METADADOS *** -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="author" content="Samuel Tank" />
+  <meta name="description"
+    content="Projeto de loja virtual para a venda de bebidas a base de cafeína em estilo landing page" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FONTS -->
-    <!-- MonteCarlo {font-family: 'MonteCarlo', cursive;} -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin="crossorigin"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Montserrat {font-family: 'Montserrat', sans-serif;} -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin="crossorigin"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- 
+  <!-- *** FAVICON *** -->
+  <link rel="shortcut icon" href="./assets/favicon.png"
+    type="image/x-icon" />
+
+  <!-- *** FONTS *** -->
+
+  <!-- MonteCarlo {font-family: 'MonteCarlo', cursive;} -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com"
+    crossorigin="crossorigin" />
+  <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap"
+    rel="stylesheet" />
+  <!-- Montserrat {font-family: 'Montserrat', sans-serif;} -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com"
+    crossorigin="crossorigin" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- 
       Montserrat Alternates {font-family: 'Montserrat Alternates', sans-serif;}
     -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin="crossorigin"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com"
+    crossorigin="crossorigin" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <!-- 
       Poppins {font-family: 'Poppins', sans-serif;}
      -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com"
+    crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 
-    <!-- LINKS CSS -->
-    <link rel="stylesheet" href="./styles/root.css" />
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/body.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <!-- HOME -->
-    <link rel="stylesheet" href="./styles/home/section.css" />
-    <link rel="stylesheet" href="./styles/home/header.css" />
-    <link rel="stylesheet" href="./styles/home/body-section.css" />
-    <link rel="stylesheet" href="./styles/home/content-promo-price.css" />
-    <link rel="stylesheet" href="./styles/home/product.css" />
-    <link rel="stylesheet" href="./styles/home/other-products.css" />
-    <link rel="stylesheet" href="./styles/home/divider.css" />
-    <!-- BOUTIQUE -->
-    <link rel="stylesheet" href="./styles/boutique/sec-boutique.css" />
-    <link rel="stylesheet" href="./styles/boutique/divider-boutique.css" />
-    <!-- DESTAQUES DO DIA -->
-    <link rel="stylesheet" href="./styles/dest/sec-dest.css" />
-    <!-- 
+  <!-- *** LINKS CSS *** -->
+
+  <link rel="stylesheet" href="./styles/root.css" />
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/body.css" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <!-- HOME -->
+  <link rel="stylesheet" href="./styles/home/section.css" />
+  <link rel="stylesheet" href="./styles/home/header.css" />
+  <link rel="stylesheet" href="./styles/home/body-section.css" />
+  <link rel="stylesheet" href="./styles/home/content-promo-price.css" />
+  <link rel="stylesheet" href="./styles/home/product.css" />
+  <link rel="stylesheet" href="./styles/home/other-products.css" />
+  <link rel="stylesheet" href="./styles/home/divider.css" />
+  <!-- BOUTIQUE -->
+  <link rel="stylesheet" href="./styles/boutique/section.css" />
+  <link rel="stylesheet" href="./styles/boutique/divider-boutique.css" />
+  <!-- DESTAQUES DO DIA -->
+  <link rel="stylesheet" href="./styles/dest/section.css" />
+  <!-- SHOWCASE -->
+  <link rel="stylesheet" href="./styles/showcase/section.css" />
+  <!-- SOBRE NÓS -->
+  <link rel="stylesheet" href="./styles/about-us/section.css" />
+  <!-- CONTACT -->
+  <link rel="stylesheet" href="./styles/contact/section.css" />
+  <!-- FOOTER -->
+  <link rel="stylesheet" href="./styles/footer/footer.css" />
+  <!-- 
       folha executada na condição de media
 
       <link 
@@ -99,301 +86,403 @@
       />
      -->
 
-    <!-- SCRIPTS -->
-    <!-- HOME -->
-    <script
-      src="./js/home/header-nav-itens-bean-move.js"
-      defer="defer"
-    ></script>
-    <script src="./js/home/header-nav-scrolling.js" defer="defer"></script>
-    <!-- DESTAQUE DO DIA -->
-    <script src="./js/dest/scrolling.js" defer="defer"></script>
-    <!-- font awesome -->
-    <script
-      src="https://kit.fontawesome.com/a6500d6e57.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- drag scroll lib -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"
-      defer="defer"
-    ></script>
+  <!-- *** SCRIPTS *** -->
 
-    <!-- tab title: -->
-    <title>Coffee Shop</title>
-  </head>
-  <body>
-    <main>
-      <!-- SEÇÃO HOME -->
-      <section class="sec-home">
-        <!-- header -->
-        <div class="container-sec-home-header">
-          <header class="header-sec-home">
-            <div class="header-sec-home-logo">
-              <!-- logo in background -->
+  <!-- HOME -->
+  <script src="./js/home/header-nav-itens-bean-move.js" defer="defer"></script>
+  <script src="./js/home/header-nav-scrolling.js" defer="defer"></script>
+  <script src="./js/home/smooth-scrolling.js" defer="defer"></script>
+  <!-- DESTAQUE DO DIA -->
+  <script src="./js/dest/scrolling.js" defer="defer"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/a6500d6e57.js"
+    crossorigin="anonymous"></script>
+  <!-- drag scroll lib -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"
+    defer="defer"></script>
+
+  <!-- *** tab title *** -->
+  <title>Coffee Shop</title>
+</head>
+
+<body>
+  <main>
+    <!-- # SEÇÃO HOME # -->
+    <section class="sec-home" id="home">
+      <!-- header -->
+      <div class="container-sec-home-header">
+        <header class="header-sec-home">
+          <div class="header-sec-home-logo">
+            <!-- logo in background -->
+          </div>
+          <nav class="header-sec-home-nav">
+            <ul class="header-sec-home-nav-list">
+              <li class="nav-list-item">
+                <a href="#home" class="active">
+                  <span>Promoções</span>
+                  <div id="coffee-bean-bar"></div>
+                </a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#highlight"><span>Destaques</span></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#products"><span>Produtos</span></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#about-us"><span>Sobre Nós</span></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#contact"><span>Contato</span></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-sec-home-nav-icons">
+            <div class="icon-account" id="icon-account"
+              title="Crie uma nova conta ou faça login">
+              <i class="fa-solid fa-user" id="user-icon"></i>
             </div>
-            <nav class="header-sec-home-nav">
-              <ul class="header-sec-home-nav-list">
-                <li class="nav-list-item">
-                  <a href="#" class="active">
-                    <span>Promoções</span>
-                    <div id="coffee-bean-bar"></div>
-                  </a>
-                </li>
-                <li class="nav-list-item">
-                  <a href="#"><span>Destaques</span></a>
-                </li>
-                <li class="nav-list-item">
-                  <a href="#"><span>Produtos</span></a>
-                </li>
-                <li class="nav-list-item">
-                  <a href="#"><span>Sobre Nós</span></a>
-                </li>
-                <li class="nav-list-item">
-                  <a href="#"><span>Contato</span></a>
-                </li>
-              </ul>
-            </nav>
-            <div class="header-sec-home-nav-icons">
-              <div
-                class="icon-account"
-                id="icon-account"
-                title="Crie uma nova conta ou faça login"
-              >
-                <i class="fa-solid fa-user" id="user-icon"></i>
-              </div>
-              <div class="icon-cart" title="Leve seus cafés">
-                <!-- icon cart -->
-                <span class="quantity">0</span>
-              </div>
+            <div class="icon-cart" title="Leve seus cafés">
+              <!-- icon cart -->
+              <span class="quantity">0</span>
             </div>
-          </header>
-        </div>
+          </div>
+        </header>
+      </div>
 
-        <!-- DECORAÇÃO DE BACKGROUND -->
-        <div class="txt-back">
-          <!-- <span>café de verdade</span> -->
-          <svg viewBox="0 0 1200 120" xmlns="https://www.w3.org/2000/svg">
-            <text x="21%" y="80">café de verdade</text>
-          </svg>
-        </div>
+      <!-- DECORAÇÃO DE BACKGROUND -->
+      <div class="txt-back">
+        <!-- <span>café de verdade</span> -->
+        <svg viewBox="0 0 1200 120" xmlns="https://www.w3.org/2000/svg">
+          <text x="21%" y="80">café de verdade</text>
+        </svg>
+      </div>
 
-        <!-- sementes de fundo -->
-        <div class="coffee-bean1 abso"><!-- imagem em background CSS  --></div>
-        <div class="coffee-bean2 abso"><!-- imagem em background CSS  --></div>
-        <div class="coffee-bean3 abso"><!-- imagem em background CSS  --></div>
-        <div class="coffee-bean4 abso"><!-- imagem em background CSS  --></div>
+      <!-- sementes de fundo (itens decorativos) -->
+      <div class="coffee-bean1 abso">
+        <!-- imagem em background CSS  -->
+      </div>
+      <div class="coffee-bean2 abso">
+        <!-- imagem em background CSS  -->
+      </div>
+      <div class="coffee-bean3 abso">
+        <!-- imagem em background CSS  -->
+      </div>
+      <div class="coffee-bean4 abso">
+        <!-- imagem em background CSS  -->
+      </div>
 
-        <!-- base do produto principal -->
-        <div class="base-main-product"><!-- imagem em background CSS --></div>
+      <!-- base do produto principal -->
+      <div class="base-main-product">
+        <!-- imagem em background CSS -->
+      </div>
 
-        <!-- CONTEÚDO PRICIPAL -->
-        <div class="sec-home-main-content">
-          <!-- preço e quantidade de produtos da promoção -->
-          <div class="sec-home-main-content-promo-price">
-            <div class="title-promo-container">
-              <span class="title-promo">Promoção</span>
-            </div>
-            <div class="promo-container">
-              <div class="price-values">
-                <div class="percentage-discount-container">
-                  <span class="percentage-discount">20% OFF</span>
-                </div>
-                <div class="price"><span>R$</span><span>5,90</span></div>
-                <div class="last-price"><span>R$</span><span>7,10</span></div>
+      <!-- CONTEÚDO PRICIPAL -->
+      <div class="sec-home-main-content">
+        <!-- preço e quantidade de produtos da promoção -->
+        <div class="sec-home-main-content-promo-price">
+          <div class="title-promo-container">
+            <span class="title-promo">Promoção</span>
+          </div>
+          <div class="promo-container">
+            <div class="price-values">
+              <div class="percentage-discount-container">
+                <span class="percentage-discount">20% OFF</span>
               </div>
-              <div class="container-purchase">
-                <div class="promo-quantity-container">
-                  <button type="button" class="btn-less">&minus;</button>
-                  <span class="coffee-promo-quantity">1</span>
-                  <button type="button" class="btn-more">&plus;</button>
-                </div>
-                <div class="btn-add-cart-container">
-                  <button type="button" id="btn-buy-promo">
-                    <i class="fa-solid fa-basket-shopping"></i>
-                  </button>
-                </div>
+              <div class="price"><span>R$</span><span>5,90</span></div>
+              <div class="last-price"><span>R$</span><span>7,10</span></div>
+            </div>
+            <div class="container-purchase">
+              <div class="promo-quantity-container">
+                <button type="button" class="btn-less">&minus;</button>
+                <span class="coffee-promo-quantity">1</span>
+                <button type="button" class="btn-more">&plus;</button>
+              </div>
+              <div class="btn-add-cart-container">
+                <button type="button" id="btn-buy-promo">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
               </div>
             </div>
           </div>
-          <!-- produto em promoção -->
-          <div class="sec-home-main-content-promo-product">
-            <div id="special-product">
-              <div class="center-container">
-                <!-- itens que estão no centro da home page -->
-                <img src="./assets/coffeeliquidd.png" alt="" width="100" />
-                <img
-                  src="./assets/promo_coffee.png"
-                  alt="copo descartável de café com tampa preta, corpo branco e 
+        </div>
+        <!-- produto em promoção -->
+        <div class="sec-home-main-content-promo-product">
+          <div id="special-product">
+            <div class="center-container">
+              <!-- itens que estão no centro da home page -->
+              <img src="./assets/coffeeliquidd.png" alt="" width="100" />
+              <img src="./assets/promo_coffee.png" alt="copo descartável de café com tampa preta, corpo branco e 
                   tarja central com logo estampada centralizado na tela"
-                  width="100"
-                />
-                <img src="./assets/coffeeeewithshadow.png" alt="" width="100" />
-              </div>
-              <!-- ícones das setas dos produtos em promoção -->
-              <div class="arrows">
-                <i class="fa-solid fa-arrow-right"></i>
-                <i class="fa-solid fa-arrow-left"></i>
-              </div>
+                width="100" />
+              <img src="./assets/coffeeeewithshadow.png" alt="" width="100" />
             </div>
-            <!-- informações dos produtos -->
-            <div class="product-info">
-              <div class="origin info-container">
-                <span class="product-info-title">origem</span>
-                <span class="product-info">arábica</span>
-              </div>
-              <div class="intensity info-container">
-                <span class="product-info-title">intensidade</span>
-                <span class="product-info">suave</span>
-              </div>
-              <div class="ingredients info-container">
-                <span class="product-info-title">ingredientes</span>
-                <span class="product-info">100% café</span>
-              </div>
+            <!-- ícones das setas dos produtos em promoção -->
+            <div class="arrows">
+              <i class="fa-solid fa-arrow-right"></i>
+              <i class="fa-solid fa-arrow-left"></i>
             </div>
           </div>
-          <div class="sec-home-main-content-promo-other-products">
-            <div class="product-one">
-              <div class="img-container">
-                <img
-                  src="./assets/spccup.png"
-                  alt="copo para café de papelão marrom, com tampa preta e logo 
-                  no centro"
-                  width="100"
-                />
-              </div>
-              <span class="descri-product">café chocolate</span>
+          <!-- informações dos produtos -->
+          <div class="product-info">
+            <div class="origin info-container">
+              <span class="product-info-title">origem</span>
+              <span class="product-info">arábica</span>
             </div>
-            <div class="product-two">
-              <div class="img-container">
-                <img
-                  src="./assets/spccup.png"
-                  alt="copo para café de papelão marrom, com tampa preta e logo 
-                  no centro"
-                  width="100"
-                />
-              </div>
-              <span class="descri-product">café gelado</span>
+            <div class="intensity info-container">
+              <span class="product-info-title">intensidade</span>
+              <span class="product-info">suave</span>
+            </div>
+            <div class="ingredients info-container">
+              <span class="product-info-title">ingredientes</span>
+              <span class="product-info">100% café</span>
             </div>
           </div>
         </div>
+        <div class="sec-home-main-content-promo-other-products">
+          <div class="product-one">
+            <div class="img-container">
+              <img src="./assets/spccup.png"
+                alt="copo para café de papelão marrom, com tampa preta e logo no centro"
+                width="100" />
+            </div>
+            <span class="descri-product">café chocolate</span>
+          </div>
+          <div class="product-two">
+            <div class="img-container">
+              <img src="./assets/spccup.png"
+                alt="copo para café de papelão marrom, com tampa preta e logo no centro"
+                width="100" />
+            </div>
+            <span class="descri-product">café gelado</span>
+          </div>
+        </div>
+      </div>
 
-        <!-- [svg by https://www.shapedivider.app/] -->
-        <div class="shape-divider-bottom">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,
+      <!-- [svg by https://www.shapedivider.app/] -->
+      <div class="shape-divider-bottom">
+        <!-- item decorativo -->
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,
               136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,
               18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,
-              104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-              opacity=".25"
-              class="shape-fill"
-            ></path>
-            <path
-              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,
+              104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"
+            class="shape-fill"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,
               111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,
               84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,
               62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,
               116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,
-              6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-              opacity=".5"
-              class="shape-fill"
-            ></path>
-            <path
-              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,
+              6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"
+            class="shape-fill"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,
               84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,
               77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
-      </section>
-    </main>
-
-    <!-- SEÇÃO BOUTIQUE -->
-    <section class="sec-boutique">
-      <div class="shape-divider-boutique">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <rect x="1200" height="3.6"></rect>
-          <rect height="3.6"></rect>
-          <path
-            d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z"
-            class="shape-fill"
-          ></path>
+            class="shape-fill"></path>
         </svg>
       </div>
-      <div class="container-center-text">
-        <span>visite-nos!</span>
-        <span>boutique</span>
-        <span>
-          av.dos autonomistas, 1400 - vila yara, osasco - SP, 06020-010
-        </span>
-      </div>
     </section>
+  </main>
 
-    <!-- SEÇÃO DESTAQUES DO DIA -->
-    <section class="sec-dest">
-      <div class="container-content">
-        <div class="title-dest">
-          <span>destaques do dia</span>
-        </div>
-        <div class="container-with-arrows">
-          <!-- arrows in ::after e ::before -->
+  <!-- # SEÇÃO BOUTIQUE # -->
+  <section class="sec-boutique" id="boutique">
+    <div class="shape-divider-boutique">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <rect x="1200" height="3.6"></rect>
+        <rect height="3.6"></rect>
+        <path
+          d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+    <div class="container-center-text">
+      <span>visite-nos!</span>
+      <span>boutique</span>
+      <span>
+        av.dos autonomistas, 1400 - vila yara, osasco - SP, 06020-010
+      </span>
+    </div>
+  </section>
 
-          <!-- CARDS DESTAQUE -->
-          <div class="container-dest-cards">
-            <div class="dest-card1 dest-card">
-              <div class="container-dest-card-img">
-                <img
-                  src="./assets/coffe_item.png"
-                  alt="copo de café com tampa preta, corpo branco em plástico 
-                  coberto por uma fina camada de papelão"
-                  width="100"
-                />
+  <!-- # SEÇÃO DESTAQUES DO DIA # -->
+  <section class="sec-dest" id="highlight">
+    <div class="title-dest-container">
+      <h1 class="title-dest">destaques do dia</h1>
+    </div>
+    <div class="container-content">
+      <div class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
+
+      <div class="all-cards-container">
+        <!-- CARDS DESTAQUE -->
+        <div class="container-dest-cards">
+          <div class="dest-card1 dest-card">
+            <div class="container-dest-card-img">
+              <img src="./assets/coffe_item.png"
+                alt="copo de café com tampa preta, corpo branco em plástico coberto por uma fina camada de papelão"
+                width="100" />
+            </div>
+            <div class="container-info-card">
+              <span class="stars">&starf;&starf;&starf;&starf;&starf;</span>
+              <span class="classi">café forte</span>
+              <span class="title-product-card">café árabe</span>
+              <span class="price">R$7,00</span>
+            </div>
+            <div class="footer-dest-card">
+              <div class="container-quantity">
+                <button type="button">&minus;</button>
+                <span class="card-contity-product">1</span>
+                <button type="button">&plus;</button>
               </div>
-              <div class="container-info-card">
-                <span class="stars">&starf;&starf;&starf;&starf;&starf;</span>
-                <span class="classi">café forte</span>
-                <span class="title-product-card">café árabe</span>
-                <span class="price">R$7,00</span>
-              </div>
-              <div class="footer-dest-card">
-                <div class="container-quantity">
-                  <button type="button">&minus;</button>
-                  <span class="card-contity-product">1</span>
-                  <button type="button">&plus;</button>
-                </div>
-                <div class="container-btn-add-car-dest-product">
-                  <button type="button">
-                    <i class="fa-solid fa-basket-shopping"></i>
-                  </button>
-                </div>
+              <div class="container-btn-add-car-dest-product">
+                <button type="button">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="container-dest-cards">
+        <div class="container-dest-cards">
+          <div class="dest-card1 dest-card">
+            <div class="container-dest-card-img">
+              <img src="./assets/coffe_item.png"
+                alt="copo de café com tampa preta, corpo branco em plástico coberto por uma fina camada de papelão"
+                width="100" />
+            </div>
+            <div class="container-info-card">
+              <span class="stars">&starf;&starf;&starf;&starf;&starf;</span>
+              <span class="classi">café fraco</span>
+              <span class="title-product-card">café árabe</span>
+              <span class="price">R$6,00</span>
+            </div>
+            <div class="footer-dest-card">
+              <div class="container-quantity">
+                <button type="button">&minus;</button>
+                <span class="card-contity-product">1</span>
+                <button type="button">&plus;</button>
+              </div>
+              <div class="container-btn-add-car-dest-product">
+                <button type="button">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-dest-cards">
+          <div class="dest-card1 dest-card">
+            <div class="container-dest-card-img">
+              <img src="./assets/coffe_item.png"
+                alt="copo de café com tampa preta, corpo branco em plástico coberto por uma fina camada de papelão"
+                width="100" />
+            </div>
+            <div class="container-info-card">
+              <span class="stars">&starf;&starf;&starf;&starf;&starf;</span>
+              <span class="classi">café com choco</span>
+              <span class="title-product-card">café árabe</span>
+              <span class="price">R$8,00</span>
+            </div>
+            <div class="footer-dest-card">
+              <div class="container-quantity">
+                <button type="button">&minus;</button>
+                <span class="card-contity-product">1</span>
+                <button type="button">&plus;</button>
+              </div>
+              <div class="container-btn-add-car-dest-product">
+                <button type="button">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-dest-cards">
+          <div class="dest-card1 dest-card">
+            <div class="container-dest-card-img">
+              <img src="./assets/coffe_item.png"
+                alt="copo de café com tampa preta, corpo branco em plástico coberto por uma fina camada de papelão"
+                width="100" />
+            </div>
+            <div class="container-info-card">
+              <span class="stars">&starf;&starf;&starf;&starf;&starf;</span>
+              <span class="classi">café forte gelado</span>
+              <span class="title-product-card">café árabe</span>
+              <span class="price">R$5,00</span>
+            </div>
+            <div class="footer-dest-card">
+              <div class="container-quantity">
+                <button type="button">&minus;</button>
+                <span class="card-contity-product">1</span>
+                <button type="button">&plus;</button>
+              </div>
+              <div class="container-btn-add-car-dest-product">
+                <button type="button">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-go-to" title="voltar um destaque">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+
+      <footer>
+        <div class="coffe">
+          <!-- item decorativo -->
+          <img src="./assets/treebeans.png" alt="" />
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <!-- # SEÇÃO NOSSOS PRODUTOS # -->
+  <section class="sec-all-products" id="products">
+    <div class="all-products-title-box">
+      <img src="./assets/heartcup.png" alt="" width="100" />
+      <!-- item decorativo -->
+      <h1>nossos produtos</h1>
+    </div>
+    <div class="all-components-container">
+      <!-- classificação -->
+      <div class="classify">
+        <label for="select">Filtrar produtos:</label>
+        <select name="select" id="select">
+          <option value="">Classificar</option>
+          <optgroup label="Filtros Básicos">
+            <option value="Favoritos">Favoritos</option>
+            <option value="Ordem crescente">Ordem crescente</option>
+            <option value="Ordem decrescente">Ordem decrescente</option>
+          </optgroup>
+          <optgroup label="Filtros por sabor">
+            <option value="Chocolate">Chocolate</option>
+            <option value="Cereja">Cereja</option>
+            <option value="Puro">Puro</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="all-products-cards-container">
+        <!-- container para cards -->
+        <div class="all-products-card">
+          <!-- CARDS -->
+          <div class="container-dest-cards noborder">
             <div class="dest-card1 dest-card">
               <div class="container-dest-card-img">
-                <img
-                  src="./assets/coffe_item.png"
-                  alt="copo de café com tampa preta, corpo branco em plástico 
-                  coberto por uma fina camada de papelão"
-                  width="100"
-                />
+                <img src="./assets/coffe_item.png"
+                  alt="copo de café com tampa preta, corpo branco em plástico coberto por uma fina camada de papelão"
+                  width="100" />
               </div>
               <div class="container-info-card">
-                <span class="stars">&starf;&starf;&starf;&starf;&starf;</span>
+                <span class="stars">&starf;&starf;&starf;&starf;&star;</span>
                 <span class="classi">café fraco</span>
                 <span class="title-product-card">café árabe</span>
                 <span class="price">R$6,00</span>
@@ -413,21 +502,18 @@
             </div>
           </div>
 
-          <div class="container-dest-cards">
+          <div class="container-dest-cards noborder">
             <div class="dest-card1 dest-card">
               <div class="container-dest-card-img">
-                <img
-                  src="./assets/coffe_item.png"
-                  alt="copo de café com tampa preta, corpo branco em plástico 
-                  coberto por uma fina camada de papelão"
-                  width="100"
-                />
+                <img src="./assets/coffe_item.png"
+                  alt="copo de café com tampa preta, corpo branco em plástico coberto por uma fina camada de papelão"
+                  width="100" />
               </div>
               <div class="container-info-card">
-                <span class="stars">&starf;&starf;&starf;&starf;&starf;</span>
-                <span class="classi">café com choco</span>
+                <span class="stars">&starf;&starf;&starf;&starf;&star;</span>
+                <span class="classi">café fraco</span>
                 <span class="title-product-card">café árabe</span>
-                <span class="price">R$8,00</span>
+                <span class="price">R$6,00</span>
               </div>
               <div class="footer-dest-card">
                 <div class="container-quantity">
@@ -444,21 +530,17 @@
             </div>
           </div>
 
-          <div class="container-dest-cards">
+          <div class="container-dest-cards noborder">
             <div class="dest-card1 dest-card">
               <div class="container-dest-card-img">
-                <img
-                  src="./assets/coffe_item.png"
-                  alt="copo de café com tampa preta, corpo branco em plástico 
-                  coberto por uma fina camada de papelão"
-                  width="100"
-                />
+                <img src="./assets/coffe_item.png" alt="copo de café com tampa preta, corpo branco em plástico 
+                    coberto por uma fina camada de papelão" width="100" />
               </div>
               <div class="container-info-card">
-                <span class="stars">&starf;&starf;&starf;&starf;&starf;</span>
-                <span class="classi">café forte gelado</span>
+                <span class="stars">&starf;&starf;&starf;&starf;&star;</span>
+                <span class="classi">café fraco</span>
                 <span class="title-product-card">café árabe</span>
-                <span class="price">R$5,00</span>
+                <span class="price">R$6,00</span>
               </div>
               <div class="footer-dest-card">
                 <div class="container-quantity">
@@ -474,8 +556,308 @@
               </div>
             </div>
           </div>
+
+          <div class="container-dest-cards noborder">
+            <div class="dest-card1 dest-card">
+              <div class="container-dest-card-img">
+                <img src="./assets/coffe_item.png" alt="copo de café com tampa preta, corpo branco em plástico 
+                    coberto por uma fina camada de papelão" width="100" />
+              </div>
+              <div class="container-info-card">
+                <span class="stars">&starf;&starf;&starf;&starf;&star;</span>
+                <span class="classi">café fraco</span>
+                <span class="title-product-card">café árabe</span>
+                <span class="price">R$6,00</span>
+              </div>
+              <div class="footer-dest-card">
+                <div class="container-quantity">
+                  <button type="button">&minus;</button>
+                  <span class="card-contity-product">1</span>
+                  <button type="button">&plus;</button>
+                </div>
+                <div class="container-btn-add-car-dest-product">
+                  <button type="button">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-dest-cards noborder">
+            <div class="dest-card1 dest-card">
+              <div class="container-dest-card-img">
+                <img src="./assets/coffe_item.png" alt="copo de café com tampa preta, corpo branco em plástico 
+                    coberto por uma fina camada de papelão" width="100" />
+              </div>
+              <div class="container-info-card">
+                <span class="stars">&starf;&starf;&starf;&starf;&star;</span>
+                <span class="classi">café fraco</span>
+                <span class="title-product-card">café árabe</span>
+                <span class="price">R$6,00</span>
+              </div>
+              <div class="footer-dest-card">
+                <div class="container-quantity">
+                  <button type="button">&minus;</button>
+                  <span class="card-contity-product">1</span>
+                  <button type="button">&plus;</button>
+                </div>
+                <div class="container-btn-add-car-dest-product">
+                  <button type="button">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-dest-cards noborder">
+            <div class="dest-card1 dest-card">
+              <div class="container-dest-card-img">
+                <img src="./assets/coffe_item.png" alt="copo de café com tampa preta, corpo branco em plástico 
+                    coberto por uma fina camada de papelão" width="100" />
+              </div>
+              <div class="container-info-card">
+                <span class="stars">&starf;&starf;&starf;&starf;&star;</span>
+                <span class="classi">café fraco</span>
+                <span class="title-product-card">café árabe</span>
+                <span class="price">R$6,00</span>
+              </div>
+              <div class="footer-dest-card">
+                <div class="container-quantity">
+                  <button type="button">&minus;</button>
+                  <span class="card-contity-product">1</span>
+                  <button type="button">&plus;</button>
+                </div>
+                <div class="container-btn-add-car-dest-product">
+                  <button type="button">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-dest-cards noborder">
+            <div class="dest-card1 dest-card">
+              <div class="container-dest-card-img">
+                <img src="./assets/coffe_item.png" alt="copo de café com tampa preta, corpo branco em plástico 
+                    coberto por uma fina camada de papelão" width="100" />
+              </div>
+              <div class="container-info-card">
+                <span class="stars">&starf;&starf;&starf;&starf;&star;</span>
+                <span class="classi">café fraco</span>
+                <span class="title-product-card">café árabe</span>
+                <span class="price">R$6,00</span>
+              </div>
+              <div class="footer-dest-card">
+                <div class="container-quantity">
+                  <button type="button">&minus;</button>
+                  <span class="card-contity-product">1</span>
+                  <button type="button">&plus;</button>
+                </div>
+                <div class="container-btn-add-car-dest-product">
+                  <button type="button">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-dest-cards noborder">
+            <div class="dest-card1 dest-card">
+              <div class="container-dest-card-img">
+                <img src="./assets/coffe_item.png" alt="copo de café com tampa preta, corpo branco em plástico 
+                    coberto por uma fina camada de papelão" width="100" />
+              </div>
+              <div class="container-info-card">
+                <span class="stars">&starf;&starf;&starf;&starf;&star;</span>
+                <span class="classi">café fraco</span>
+                <span class="title-product-card">café árabe</span>
+                <span class="price">R$6,00</span>
+              </div>
+              <div class="footer-dest-card">
+                <div class="container-quantity">
+                  <button type="button">&minus;</button>
+                  <span class="card-contity-product">1</span>
+                  <button type="button">&plus;</button>
+                </div>
+                <div class="container-btn-add-car-dest-product">
+                  <button type="button">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-dest-cards noborder">
+            <div class="dest-card1 dest-card">
+              <div class="container-dest-card-img">
+                <img src="./assets/coffe_item.png" alt="copo de café com tampa preta, corpo branco em plástico 
+                    coberto por uma fina camada de papelão" width="100" />
+              </div>
+              <div class="container-info-card">
+                <span class="stars">&starf;&starf;&starf;&starf;&star;</span>
+                <span class="classi">café fraco</span>
+                <span class="title-product-card">café árabe</span>
+                <span class="price">R$6,00</span>
+              </div>
+              <div class="footer-dest-card">
+                <div class="container-quantity">
+                  <button type="button">&minus;</button>
+                  <span class="card-contity-product">1</span>
+                  <button type="button">&plus;</button>
+                </div>
+                <div class="container-btn-add-car-dest-product">
+                  <button type="button">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="navigator-products"></div>
+      </div>
+      <div class="heart-coffee">
+        <div class="background-heart"></div>
+        <!-- item decorativo -->
+        <img src="./assets/heartcoffee.png" width="100" alt="" />
+      </div>
+  </section>
+
+  <!-- # SECÃO SOBRE NÓS # -->
+  <section class="sec-about-us" id="about-us">
+    <div class="sec-about-title-container">
+      <h1>sobre nós</h1>
+    </div>
+    <div class="content-about-us-container">
+      <div class="img-about-us-container">
+        <div class="ret-background-top"></div>
+        <div class="ret-background-bottom"></div>
+        <div class="photo-container">
+          <img src="./assets/michael_burrows.jpg"
+            alt="Fotografia de um homem adulto de pele clara e cabelos negros, curtos, colhendo sementes de café"
+            width="100" />
+        </div>
+        <div class="coffee-with-plant-container">
+          <img src="./assets/coffee_with_plant.png" alt="" width="100">
         </div>
       </div>
-    </section>
-  </body>
+      <div class="text-about-us-container">
+        <!-- item decorativo -->
+        <img src="./assets/float_coffee_bean.png" width="100" alt="">
+        <p>
+          Nossa história teve início em 1991, quando a lingaguem de programacão
+          Java foi criada, nosso CEO e James Gosling eram muito amigos, ambos
+          trabalhavam juntos no desenvolvimento da linguagem.
+        </p>
+        <p>
+          Durante uma reúnião de equipe, James deu a idéia de espalhar o nosso
+          café favorito pelo mundo, a ideia deu certo e hoje somos uma gigante
+          família amante do café de verdade, o Java coffee!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- # SEÇÃO CONTATO # -->
+  <section class="sec-contact" id="contact">
+    <div class="form-contact">
+      <form method="post" action="" id="form-cont" autocomplete="on">
+        <div class="title-contact-container">
+          <h1>Mande-nos uma menssagem</h1>
+        </div>
+        <div class="container-inp">
+          <label for="txtName">Seu Nome: </label>
+          <input 
+            type="text" 
+            name="txtName" 
+            id="txtName"
+            required="required"
+            placeholder="Digite seu nome" 
+          />
+        </div>
+        <div class="container-inp">
+          <label for="email">Seu E-mail:</label>
+          <input 
+            type="email" 
+            name="inpEmail" 
+            id="inpEmail"
+            required="required"
+            placeholder="Digite seu e-mail" 
+          />
+        </div>
+        <textarea 
+          name="txtArea" 
+          id="txtArea"
+          required="required" 
+          cols="30" 
+          rows="10" 
+          placeholder="Digite sua mensagem"
+        ></textarea>
+        <input type="submit" value="Enviar" id="btn-submit">
+      </form>
+    </div>
+  </section>
+
+  <!-- # FOOTER # -->
+  <footer class="body-footer">
+    <div class="container-pag-media-links">
+      <div class="social">
+        <div class="title-footer">
+          <h2>Redes Sociais</h2>
+        </div>
+        <div class="icons-social">
+          <div class="social-icon">
+            <i class="fa-brands fa-facebook-square"></i>
+          </div>
+          <div class="social-icon">
+            <i class="fa-brands fa-twitter-square"></i>
+          </div>
+          <div class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <div class="links">
+        <div class="title-footer">
+          <h2>Links úteis</h2>
+        </div>
+        <div class="list-container">
+          <ul class="foo-links-list">
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Troca rápida</a></li>
+            <li><a href="#">Trabalhe conosco</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pags">
+        <div class="title-footer">
+          <h2>Formas de Pagamento</h2>
+        </div>
+        <div class="pag-icons-container">
+          <div class="pag-icon">
+            <i class="fa-brands fa-cc-visa"></i>
+          </div>
+          <div class="pag-icon">
+            <i class="fa-brands fa-cc-mastercard"></i>
+          </div>
+          <div class="pag-icon">
+            <i class="fa-brands fa-cc-amex"></i>
+          </div>
+          <div class="pag-icon">
+            <i class="fa-solid fa-barcode"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyrigth">
+      <span>2022 © copyright Samuel Tank. Todos os direitos reservados.</span>
+    </div>
+  </footer>
+</body>
 </html>

@@ -17,7 +17,7 @@
 
 .title-promo {
   color: var(--var-header-navbar-span-promo-title);
-  font-family: 'MonteCarlo', cursive;
+  font-family: 'MonteCarlo', sans-serif;
   font-size: 5.625rem;
   line-height: 1.2;
 }

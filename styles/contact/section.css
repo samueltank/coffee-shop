@@ -1,0 +1,103 @@
+.sec-contact {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: url(../../assets/background_contact.jpg) rgba(0, 0, 0, 0.699)
+    center/cover no-repeat;
+  background-blend-mode: darken;
+}
+
+.form-contact {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+}
+
+.title-contact-container {
+  font-size: 56px;
+  font-family: 'MonteCarlo', sans-serif;
+  color: #FCFCFC;
+}
+
+#form-cont {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container-inp {
+  width: 34rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container-inp  label {
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #FCFCFC;
+  font-weight: bold;
+}
+
+.container-inp input {
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 25rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out 0.2s;
+  caret-color: #63A358;
+}
+
+.container-inp input:focus {
+  transform: scale(1.01);
+  filter: drop-shadow(0 35px 15px rgba(0, 0, 0, 0.3));
+}
+
+#txtArea {
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  outline: none;
+  width: 34rem;
+  height: 25rem;
+  resize: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  caret-color: #63A358;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+#txtArea:focus {
+  transform: scale(1.01);
+  filter: drop-shadow(0 35px 15px rgba(0, 0, 0, 0.3));
+}
+
+#btn-submit {
+  background: linear-gradient(to right, rgb(122, 72, 59), rgb(166, 97, 79));
+  min-width: 8rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #FCFCFC;
+  cursor: pointer;
+  transition: transform, filter, 0.3s ease 0.1s;
+}
+
+#btn-submit:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+}

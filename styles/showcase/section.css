@@ -1,0 +1,106 @@
+.sec-all-products {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2rem;
+  background-color: #FAF1DF;
+}
+
+.all-products-title-box {
+  position: relative;
+  width: 105%;
+  background-color: #47230a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-2deg);
+}
+
+.all-products-title-box img {
+  position: absolute;
+  width: 150px;
+  top: -50px;
+  left: 60px;
+  transform: rotate(2deg);
+}
+
+.all-products-title-box h1 {
+  font-size: 96px;
+  font-family: "MonteCarlo", sans-serif;
+  color: #fcfcfc;
+  transform: rotate(2deg);
+}
+
+.classify {
+  margin-top: 3rem;
+  align-self: flex-end;
+}
+
+.all-components-container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 70%;
+  min-height: 100%;
+  gap: 2rem;
+}
+
+.all-products-cards-container {
+  width: 100%;
+  min-height: 100%;
+}
+
+.all-products-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  gap: 2rem;
+}
+
+.noborder {
+  border: none;
+}
+
+.classify label {
+  font-family: "Monteserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #47230a;
+}
+
+.classify select {
+  width: 11rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  transition: filter 0.3s ease 0.1s;
+}
+
+.classify select:focus {
+  filter: drop-shadow(0 16px 20px black);
+}
+
+.heart-coffee {
+  align-self: center;
+  width: 25rem;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart-coffee .background-heart {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  background-color: #F9E9C9;
+  border-radius: 50%;
+}
+
+.heart-coffee > img {
+  width: 250px;
+  z-index: 2;
+}

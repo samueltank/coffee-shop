@@ -1,0 +1,138 @@
+.sec-about-us {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #FAF1DF;
+}
+
+.sec-about-us > .sec-about-title-container {
+  width: 35rem;
+  height: 10rem;
+  background-color: #fcfcfc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.sec-about-us > .sec-about-title-container h1 {
+  font-size: 96px;
+  font-family: "MonteCarlo", sans-serif;
+  color: #2c1505;
+  line-height: 1.2;
+}
+
+.sec-about-us > .content-about-us-container {
+  position: relative;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  overflow: hidden;
+}
+
+.sec-about-us > .content-about-us-container::after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 6rem;
+  background-color: #63A358;
+  z-index: 0;
+}
+
+.sec-about-us > .content-about-us-container > .img-about-us-container {
+  padding: 2rem;
+  position: relative;
+  width: 500px;
+  height: 700px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.ret-background-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 80%;
+  background-color: #8C5B47;
+  z-index: 1;
+}
+
+.ret-background-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 75%;
+  height: 80%;
+  background-color: #8C5B47;
+  border-radius: 2rem;
+  z-index: 1;
+}
+
+.sec-about-us
+  > .content-about-us-container
+  > .img-about-us-container
+  > .photo-container {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.sec-about-us
+  > .content-about-us-container
+  > .img-about-us-container
+  > .photo-container
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.coffee-with-plant-container {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-self: flex-end;
+  bottom: -50px;
+  right: -50px;
+  z-index: 3;
+}
+
+.coffee-with-plant-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.text-about-us-container {
+  width: 40%;
+  min-height: 30rem;
+  background-color: #FCFCFC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  gap: 3rem;
+  padding: 4rem;
+  z-index: 1;
+}
+
+.text-about-us-container > img {
+  position: absolute;
+  top: 115px;
+}
+
+.text-about-us-container > p {
+  color: #363636;
+  font-size: 24px;
+  font-family: 'MonteSerrat', sans-serif;
+}
