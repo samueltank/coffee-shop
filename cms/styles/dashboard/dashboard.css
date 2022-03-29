@@ -45,8 +45,8 @@ nav {
 }
 
 .nav-icon {
-  width: 10rem;
-  height: 10rem;
+  width: 6rem;
+  height: 6rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
